@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Whatsapp Web Dark Mode Enabler",
+  "description": "This extension will automatically enable dark mode on Whatsapp Web",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "whatsapp.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/*",
+        "http://web.whatsapp.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
